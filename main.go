@@ -1,0 +1,28 @@
+package main
+
+import (
+	"fmt"
+	"ti/datasource"
+	"ti/datasource/csvfeed"
+	"ti/datasource/logfeed"
+)
+
+func main() {
+	userChan := make(chan datasource.User)
+	usersAbove30 := 0
+
+	// TODO: count users older than 30 years old
+	// TODO: fix deadlock issue
+
+	go func() {
+		// TODO: read from multiple data feeds
+	}()
+
+	go func() {
+		// TODO: read users on userChan
+		// calculate age
+		// count if older than 30
+	}()
+
+	fmt.Println("users above 30: ", usersAbove30)
+}
