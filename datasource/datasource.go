@@ -10,13 +10,3 @@ type User struct {
 	Email     string
 	Birthdate time.Time
 }
-
-type DataFeed interface {
-	ReadUsers(chan User) error
-}
-
-type DataSource struct {
-	dataFeeds []DataFeed
-}
-
-// TODO: create a function called "Stream" and read users from all defined data feeds

@@ -3,8 +3,6 @@ package main
 import (
 	"fmt"
 	"ti/datasource"
-	"ti/datasource/csvfeed"
-	"ti/datasource/logfeed"
 )
 
 func main() {
