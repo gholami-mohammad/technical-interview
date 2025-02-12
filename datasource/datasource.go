@@ -9,4 +9,5 @@ type User struct {
 	LastName  string
 	Email     string
 	Birthdate time.Time
+
 }
