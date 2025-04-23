@@ -9,18 +9,19 @@ func main() {
 	// userChan := ?
 	usersAbove30 := 0
 
-	// TODO: count users older than 30 years old
-	// TODO: fix deadlock issue
-
 	go func() {
-		// TODO: read from multiple data feeds
+		// TODO: 1- read from multiple data sources
+		// read csv file and log file line by line at same time
+		// send parsed user data to userChan
 	}()
 
 	go func() {
-		// TODO: read users on userChan
+		// TODO: 2- read users on userChan
 		// calculate age
 		// count if older than 30
 	}()
+
+	// TODO: 3- fix deadlock issue if happened
 
 	fmt.Println("users above 30: ", usersAbove30)
 }
