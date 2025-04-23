@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
-	"ti/datasource"
 )
 
 func main() {
-	userChan := make(chan datasource.User)
+	// define user channel
+	// userChan := ?
 	usersAbove30 := 0
 
 	// TODO: count users older than 30 years old
